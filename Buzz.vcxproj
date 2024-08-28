@@ -169,6 +169,7 @@
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="fuzzer\fuzz.cpp" />
+    <ClCompile Include="logger\console.cpp" />
     <ClCompile Include="memory\sigscanner.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
