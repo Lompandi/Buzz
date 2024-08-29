@@ -10,7 +10,7 @@ namespace buz {
         using Constructor_t = void(*)(void*, TParam...);
         using ReadFn_t = void(*)(void*, void*, ReadOnlyBinaryStream&);
 
-        bzFuzzFrame(Constructor_t ctor, uintptr_t ctor_addr, ReadFn_t read_fn, uintptr_t read_fn_addr)
+        bzFuzzFrame(uintptr_t ctor_addr, uintptr_t read_fn_addr)
         {
             M_Ctor_t = reinterpret_cast<Constructor_t>(ctor_addr);
             M_Read_t = reinterpret_cast<ReadFn_t>(read_fn_addr);
